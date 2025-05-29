@@ -1,9 +1,9 @@
 .index-body {
 
     header {
-        width: 100%;
-        max-width: 1755px; 
-        margin: 0 auto; 
+        width: 100%; // Відносна ширина
+        max-width: 1755px; // Максимальна ширина
+        margin: 0 auto; // Центрування
         margin-bottom: 120px;
     
         nav {
@@ -12,7 +12,7 @@
             align-items: center;
             margin: 0 auto;
             background-color: #1A1A1A;
-            width: 100%; 
+            width: 100%; // Відносна ширина
             max-width: 1755px;
             border-radius: 13px;
             margin-bottom: 20px;

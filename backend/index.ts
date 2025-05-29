@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // GET all messages
-app.get('/api/messages', async (req: Request, res: Response) => {
+app.get('/messages', async (req: Request, res: Response) => {
     try {
         const db = await getDb();
         const messages = await db.collection('messages').find().toArray();
@@ -24,7 +24,7 @@ app.get('/api/messages', async (req: Request, res: Response) => {
 });
 
 // POST a new message
-app.post('/api/messages', async (req: Request, res: Response) => {
+app.post('/messages', async (req: Request, res: Response) => {
     try {
         console.log('Received form data:', req.body);
         const db = await getDb();
@@ -38,7 +38,7 @@ app.post('/api/messages', async (req: Request, res: Response) => {
 });
 
 // GET message by ID
-app.get('/api/messages/:id', async (req: Request, res: Response) => {
+app.get('/messages/:id', async (req: Request, res: Response) => {
     try {
         const db = await getDb();
         const message = await db.collection('messages').findOne({ _id: new ObjectId(req.params.id) });
@@ -52,7 +52,7 @@ app.get('/api/messages/:id', async (req: Request, res: Response) => {
 });
 
 // UPDATE message by ID
-app.put('/api/messages/:id', async (req: Request, res: Response) => {
+app.put('/messages/:id', async (req: Request, res: Response) => {
     try {
         const db = await getDb();
         const result = await db.collection('messages').updateOne(
@@ -69,7 +69,7 @@ app.put('/api/messages/:id', async (req: Request, res: Response) => {
 });
 
 // DELETE message by ID
-app.delete('/api/messages/:id', async (req: Request, res: Response) => {
+app.delete('/messages/:id', async (req: Request, res: Response) => {
     try {
         const db = await getDb();
         const result = await db.collection('messages').deleteOne({ _id: new ObjectId(req.params.id) });

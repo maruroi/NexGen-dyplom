@@ -7,9 +7,11 @@ require('dotenv').config();
 const app = express();
 
 app.use(cors({
-    origin: process.env.ALLOWED_ORIGINS ? 
-        process.env.ALLOWED_ORIGINS.split(',') : 
-        ['http://127.0.0.1:5500', 'http://localhost:5500'],
+    origin: [ 
+        'http://127.0.0.1:5500', 
+        'http://4.210.96.15', 
+        'http://localhost:5500'
+    ],
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type']
 }));
@@ -109,4 +111,3 @@ app.listen(PORT, () => {
 process.on('unhandledRejection', (err) => {
     console.error('Unhandled promise rejection:', err);
 });
-

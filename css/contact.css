@@ -3855,6 +3855,10 @@ textarea {
   resize: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 @media (max-width: 768px) {
   .index-body .container {
     width: 393px;

@@ -1,7 +1,12 @@
 @import "mixins";
+* {
+    box-sizing: border-box;
+    
+}
 .index-body {
     @media (max-width: 768px) {
         .container {
+            
             width: 393px;
             header {
                 width: 393px;
