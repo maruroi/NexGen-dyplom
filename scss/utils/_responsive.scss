@@ -1,13 +1,8 @@
 @import "mixins";
-* {
-    box-sizing: border-box;
-    
-}
-.index-body {
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
+    .index-body {
         .container {
             
-            width: 393px;
             header {
                 width: 393px;
     
@@ -244,7 +239,7 @@
                                 }
 
                                 .our-works-item-summary {
-                                    width: 393px;
+                                    width: 350px;
                                 }
                             }
     
@@ -300,9 +295,9 @@
     }
 }
 
-.projects-body {
-    @media (max-width: 768px) {
-        width: 393px;
+@media (max-width: 768px) {
+    .projects-body {
+        
             .container {
                 header {
                     width: 393px;
@@ -437,10 +432,14 @@
         
                                     .our-works-item-headline {
                                         width: 393px;
+
+                                        .our-works-item-title {
+                                            width: 200px !important;
+                                        }
                                     }
 
                                     .our-works-item-summary {
-                                        width: 393px;
+                                        width: 350px;
                                     }
                                 }
         
@@ -798,7 +797,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .blogs-open-body {
         width: 393px;
         header {
@@ -886,6 +885,24 @@
 
             .frequently-asked-questions {
                 @include frequently-asked-questions;
+
+                .modal-window {
+                    
+                    .modal-window-headline {
+                        position: relative;
+                        left: -35px;
+                    }
+
+                    .window {
+                        position: relative;
+                        left: -35px;
+
+                        p {
+                            position: relative;
+                            left: 130px;
+                        }
+                    }
+                }
             }
 
             .digital-presence {

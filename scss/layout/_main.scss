@@ -65,11 +65,17 @@ $is-production: false;
                         border: none;
                         display: flex;
                         align-items: center;
-                        gap: 7px;
-                        font-size: 17px;
-                        color: #B3B3B2;
+                        justify-content: center;
                         margin-left: -180px;
                         
+                        a {
+                            color: #B3B3B2;
+                            font-size: 17px;
+                            display: flex;
+                            align-items: center;
+                            gap: 7px;
+                            font-family: "Roboto Mono", monospace;
+                        }
                     }
                 }
             }
@@ -187,10 +193,16 @@ $is-production: false;
                     border: none;
                     display: flex;
                     align-items: center;
-                    gap: 7px;
-                    font-size: 17px;
-                    color: #B3B3B2;
-                    font-family: "Roboto Mono", monospace;
+                    justify-content: center;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                        font-size: 17px;
+                        color: #B3B3B2;
+                        font-family: "Roboto Mono", monospace;
+                    }
                 }
             }
     
@@ -429,8 +441,9 @@ $is-production: false;
                     .user {
                         display: flex;
                         align-items: center;
-                        justify-content: space-around;
-                        gap: 10px;
+                        gap: 70px;
+                        box-sizing: border-box;
+                        padding-left: 30px;
                         width: 410px;
                         height: 110px;
                         background-color: #1F1F1F;
@@ -1089,8 +1102,9 @@ $is-production: false;
                     .user {
                         display: flex;
                         align-items: center;
-                        justify-content: space-around;
-                        gap: 10px;
+                        gap: 70px;
+                        box-sizing: border-box;
+                        padding-left: 30px;
                         width: 410px;
                         height: 110px;
                         background-color: #1F1F1F;
@@ -1748,8 +1762,9 @@ $is-production: false;
                     .user {
                         display: flex;
                         align-items: center;
-                        justify-content: space-around;
-                        gap: 10px;
+                        gap: 70px;
+                        box-sizing: border-box;
+                        padding-left: 30px;
                         width: 410px;
                         height: 110px;
                         background-color: #1F1F1F;
@@ -2448,8 +2463,9 @@ $is-production: false;
                     .user {
                         display: flex;
                         align-items: center;
-                        justify-content: space-around;
-                        gap: 10px;
+                        gap: 70px;
+                        box-sizing: border-box;
+                        padding-left: 30px;
                         width: 410px;
                         height: 110px;
                         background-color: #1F1F1F;
