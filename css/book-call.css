@@ -3778,17 +3778,6 @@ button {
   border-radius: 4px;
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 input:focus,
 textarea:focus,
 select:focus {
@@ -3799,10 +3788,6 @@ select:focus {
 
 textarea {
   resize: none;
-}
-
-html, body {
-  overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
