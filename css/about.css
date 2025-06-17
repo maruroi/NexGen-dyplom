@@ -3801,7 +3801,14 @@ textarea {
   resize: none;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 @media (max-width: 768px) {
+  .index-body {
+    width: 393px;
+  }
   .index-body .container header {
     width: 393px;
   }
@@ -3898,6 +3905,9 @@ textarea {
     width: 350px;
   }
   .index-body .container header .achievements .bigger-item {
+    width: 393px;
+  }
+  .index-body .container main {
     width: 393px;
   }
   .index-body .container main .reasons-to-choose-nexgen {
@@ -4282,6 +4292,9 @@ textarea {
   .projects-body .container header .header-hero .header-photo .header-photo-txt {
     display: none;
   }
+  .projects-body .container main {
+    width: 393px;
+  }
   .projects-body .container main .key-features {
     width: 393px;
   }
@@ -4541,6 +4554,9 @@ textarea {
   }
 }
 @media (max-width: 768px) {
+  .contact-page-body {
+    width: 393px;
+  }
   .contact-page-body .container header {
     width: 393px;
   }

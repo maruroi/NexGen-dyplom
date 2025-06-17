@@ -1,8 +1,9 @@
 @import "mixins";
 @media (max-width: 768px) {
+
     .index-body {
+        width: 393px;
         .container {
-            
             header {
                 width: 393px;
     
@@ -91,6 +92,7 @@
             }
     
             main {
+                width: 393px;
                 
                 .reasons-to-choose-nexgen {
                     width: 393px;
@@ -358,6 +360,7 @@
                 }
 
                 main {
+                    width: 393px;
                     .key-features {
                         width: 393px;
                         
@@ -498,7 +501,7 @@
 @media (max-width: 768px) {
 
     .contact-page-body {
-
+        width: 393px;
         .container {
             header {
                 width: 393px;

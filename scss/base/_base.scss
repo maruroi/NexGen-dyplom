@@ -43,3 +43,7 @@ select:focus {
 textarea {
     resize: none;
 }
+
+html, body {
+    overflow-x: hidden;
+}
