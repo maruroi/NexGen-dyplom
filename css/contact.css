@@ -3845,13 +3845,15 @@ textarea {
   }
   .index-body .container header .header-hero .header-summary h2 {
     font-size: 40px;
-    width: 393px;
+    width: 340px;
+    text-align: center;
+    margin-left: -50px;
   }
   .index-body .container header .header-hero .header-summary p {
     font-size: 15px;
     width: 300px;
     margin-bottom: 5px;
-    margin-left: -90px;
+    margin-left: -70px;
   }
   .index-body .container header .header-hero .header-summary .benefits-track .benefits {
     width: 340px;
