@@ -424,7 +424,6 @@
   width: 100%;
   display: block;
   position: relative;
-  z-index: 1;
 }
 .projects-body header .header-hero .header-photo .header-photo-txt {
   position: absolute;
