@@ -77,7 +77,7 @@ async function submitContactForm(event) {
     console.log('Sending data:', data);
 
     try {
-        const response = await fetch('http://localhost:3000/submit-contact', {  // Changed endpoint path
+        const response = await fetch('/api/submit-contact', {  // Changed endpoint path
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -116,7 +116,7 @@ async function submitQuestionForm(event) {
     console.log('Sending question data:', data);
 
     try {
-        const response = await fetch('http://localhost:3000/submit-question', {
+        const response = await fetch('/api/submit-question', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -146,7 +146,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
     const data = Object.fromEntries(formData.entries());
 
     try {
-        const response = await fetch('http://localhost:3000/api/messages', {
+        const response = await fetch('/api/messages', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
@@ -165,33 +165,6 @@ document.getElementById('contactForm').addEventListener('submit', async function
     }
 });
 
-// document.getElementById('contactForm').addEventListener('submit', async function(event) {
-//     event.preventDefault();
-
-//     const formData = new FormData(this);
-//     const data = Object.fromEntries(formData.entries());
-
-//     try {
-//         const response = await fetch('https://nexgen-backend.onrender.com/api/messages', {
-//             method: 'POST',
-//             headers: { 'Content-Type': 'application/json' },
-//             body: JSON.stringify(data)
-//         });
-
-//         if (response.ok) {
-//             alert('Message sent successfully!');
-//             this.reset();
-//         } else {
-//             alert('Failed to send message.');
-//         }
-
-//     } catch (error) {
-//         console.error('Error submitting form:', error);
-//         alert('An error occurred.');
-//     }
-// });
-
-
 window.addEventListener("scroll", function () {
     const nav = document.querySelector("nav");
     if (window.scrollY > 50) {
@@ -207,17 +180,15 @@ document.getElementById('share-icon').addEventListener('click', () => {
 
     navigator.clipboard.writeText(url).then(() => {
         msg.style.display = 'block';
-        // Триггер плавної появи
         setTimeout(() => {
             msg.style.opacity = '1';
         }, 10);
 
-        // Зникнення через 2 секунди
         setTimeout(() => {
             msg.style.opacity = '0';
             setTimeout(() => {
                 msg.style.display = 'none';
-            }, 300); // час на плавне зникнення
+            }, 300); 
         }, 2000);
     }).catch(err => {
         console.error('Помилка копіювання посилання:', err);
